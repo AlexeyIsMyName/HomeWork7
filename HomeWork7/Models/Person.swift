@@ -10,6 +10,10 @@ struct Person {
     let secondName: String
     let email: String
     let phoneNumber: String
+    
+    var fullName: String {
+        firstName + " " + secondName
+    }
 }
 
 class DataManager {
