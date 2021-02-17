@@ -21,7 +21,7 @@ class MainTabBarController: UITabBarController {
         
         for viewController in viewControllers {
             guard let navigationController = viewController as? UINavigationController else { return }
-            if let contactsListTableVC = navigationController.topViewController as? ContactsListTableViewController {
+            if let contactsListTableVC = navigationController.topViewController as? ContactListTableViewController {
                 contactsListTableVC.persons = persons
             }
         }
