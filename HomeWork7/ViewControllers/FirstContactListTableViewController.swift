@@ -10,12 +10,6 @@ import UIKit
 class FirstContactListTableViewController: UITableViewController {
     
     var persons: [Person]!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.view.backgroundColor = .green
-    }
-    
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

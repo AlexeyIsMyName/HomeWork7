@@ -35,7 +35,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="TCZ-J0-nLX"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jMC-9G-fHL"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" largeTitleDisplayMode="always" id="jMC-9G-fHL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTc-aT-icX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,8 +45,8 @@
         <scene sceneID="yUd-bi-Im2">
             <objects>
                 <navigationController id="xPa-vf-Vs2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="41z-zW-KMP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="41z-zW-KMP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -62,7 +62,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ir2-li-EXA" customClass="MainTabBarController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Persons List" id="oIt-RO-LWG"/>
+                    <navigationItem key="navigationItem" title="Persons List" largeTitleDisplayMode="always" id="oIt-RO-LWG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Vr-5r-7NA">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

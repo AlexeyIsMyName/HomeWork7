@@ -16,6 +16,7 @@ class ContactDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.view.backgroundColor = .white
         navigationItem.title = person.fullName
         phoneNumberLabel.text = person.phoneNumber
         emailLabel.text = person.email
