@@ -13,6 +13,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0Mj-RJ-AWa" customClass="MainTabBarController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1uG-T0-89y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -25,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-259.4202898550725" y="116.51785714285714"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Persons List-->
         <scene sceneID="crJ-5v-nIG">
             <objects>
-                <tableViewController id="e8B-Ue-QPC" sceneMemberID="viewController">
+                <tableViewController id="e8B-Ue-QPC" customClass="ContactsListTableViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ooW-v8-fSJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,13 +49,13 @@
                             <outlet property="delegate" destination="e8B-Ue-QPC" id="lDa-PT-55h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="aA9-1n-X2b"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="aA9-1n-X2b"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohm-r4-6jl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1480" y="-178"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Persons List-->
         <scene sceneID="akF-ki-sAQ">
             <objects>
                 <tableViewController id="qPP-Xp-9q8" sceneMemberID="viewController">
@@ -77,19 +78,19 @@
                             <outlet property="delegate" destination="qPP-Xp-9q8" id="gbD-rK-FDd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Wwq-Fa-xu1"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="Wwq-Fa-xu1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOl-nm-e0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1480" y="506"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="avF-5v-N3f">
             <objects>
                 <navigationController id="iDP-HP-EDr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Yu7-J2-PC3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PSZ-0t-M1T">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="Yu7-J2-PC3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PSZ-0t-M1T">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -100,13 +101,13 @@
             </objects>
             <point key="canvasLocation" x="690" y="506"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="V9q-CY-ph1">
             <objects>
                 <navigationController id="d0v-Yf-Kp8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="r3U-1Z-PHf"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JbM-DR-c7V">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="r3U-1Z-PHf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JbM-DR-c7V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -119,6 +120,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

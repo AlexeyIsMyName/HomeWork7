@@ -66,7 +66,7 @@ class DataManager {
         ]
     }
     
-    func getData() -> [Person] {
+    func getPersonsList() -> [Person] {
         var persons = [Person]()
         
         var firstNames = self.firstNames
