@@ -12,7 +12,6 @@ class MainTabBarController: UITabBarController {
     private let dataManager = DataManager()
     private var persons: [Person]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,11 +20,9 @@ class MainTabBarController: UITabBarController {
         guard let viewControllers = self.viewControllers else { return }
         
         for viewController in viewControllers {
-            guard let navigationController = viewController as? UINavigationController else { return }
-            
-            if let contactListTableVC = navigationController.topViewController as? FirstContactListTableViewController {
+            if let contactListTableVC = viewController as? FirstContactListTableViewController {
                 contactListTableVC.persons = persons
-            } else if let contactListTableVC = navigationController.topViewController as? SecondContactListTableViewController {
+            } else if let contactListTableVC = viewController as? SecondContactListTableViewController {
                 contactListTableVC.persons = persons
             }
         }
