@@ -20,16 +20,29 @@ class SecondContactListTableViewController: UITableViewController {
         2
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        persons[section].fullName
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let fullNamelabel = UILabel()
+        
+        fullNamelabel.text = persons[section].fullName
+        fullNamelabel.textAlignment = .center
+        fullNamelabel.font = .systemFont(ofSize: 20, weight: .light)
+        fullNamelabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.6...0.9),
+                                        green: CGFloat.random(in: 0.6...0.9),
+                                        blue: CGFloat.random(in: 0.6...0.9),
+                                        alpha: 1.0)
+        
+        return fullNamelabel
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactInfo", for: indexPath)
-
+        
         let person = persons[indexPath.section]
         
         var content = cell.defaultContentConfiguration()
+        
+        content.textProperties.font = .systemFont(ofSize: 16, weight: .light)
         
         switch indexPath.row {
         case 0: content.image = UIImage(systemName: "phone")

@@ -64,6 +64,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" largeTitleDisplayMode="always" id="oIt-RO-LWG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Vr-5r-7NA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

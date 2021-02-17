@@ -23,8 +23,13 @@ class FirstContactListTableViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
+        content.textProperties.font = .systemFont(ofSize: 20, weight: .light)
         
         cell.contentConfiguration = content
+        cell.backgroundColor = UIColor(red: CGFloat.random(in: 0.6...0.9),
+                                       green: CGFloat.random(in: 0.6...0.9),
+                                       blue: CGFloat.random(in: 0.6...0.9),
+                                       alpha: 1.0)
 
         return cell
     }
@@ -34,5 +39,6 @@ class FirstContactListTableViewController: UITableViewController {
         guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         contactDetailsVC.person = persons[indexPath.row]
+        contactDetailsVC.viewColor = tableView.cellForRow(at: indexPath)?.backgroundColor
     }
 }
